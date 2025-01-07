@@ -7,8 +7,10 @@ services:
       - "8080:8080"
     volumes:
       - .:/app
+      - /app/build
+      - /app/.gradle
     working_dir: /app
-    command: sh -c "./gradlew clean build --project-cache-dir libs --gradle-user-home libs --offline && java -jar build/libs/gradle-offline-demo-0.0.1-SNAPSHOT.jar"
+    command: sh -c "./gradlew build --project-cache-dir libs --gradle-user-home libs --offline && java -jar build/libs/gradle-offline-demo-0.0.1-SNAPSHOT.jar"
 
 networks:
   restricted:
