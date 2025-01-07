@@ -41,8 +41,3 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
-
-//tasks.register('copyDependencies', Copy) {
-//    from configurations.runtimeClasspath
-//    into "libs" // JAR 파일을 복사할 디렉터리
-//}
