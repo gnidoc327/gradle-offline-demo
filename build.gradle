@@ -26,22 +26,8 @@ repositories {
 }
 
 dependencies {
-//    if (offlineMode) {
-//        implementation fileTree(dir: 'libs', include: ['*.jar'])
-//
-//        annotationProcessor files('libs/lombok-1.18.32.jar')
-//        testImplementation files('libs/spring-boot-starter-test-3.4.1.jar')
-//        testRuntimeOnly files('libs/junit-platform-launcher-1.10.2')
-//    } else {
-//
-//    }
     implementation 'org.springframework.boot:spring-boot-starter-web:3.4.1'
     implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0'
-
-    // gradle plugin
-    // - search link: https://plugins.gradle.org/search
-//    implementation("org.springframework.boot:org.springframework.boot.gradle.plugin:3.4.1")
-//    implementation("io.spring.dependency-management:io.spring.dependency-management.gradle.plugin:1.1.7")
 
     // dev dependencies
     implementation 'org.projectlombok:lombok:1.18.32'
